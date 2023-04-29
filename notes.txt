@@ -1,0 +1,7 @@
+Comando === Significado
+-----------------------------------
+echo hello terminal === printa 'hello terminal'
+pwd === printa o diretorio que o terminal se encontra. 'print working directory'
+more <filename> === usado pra ver o que tem dentro de certo arquivo/diretorio
+ls -l === lista o conteudo da past de forma listada em colunas
+touch <filename> === usado pra criar arquivos
