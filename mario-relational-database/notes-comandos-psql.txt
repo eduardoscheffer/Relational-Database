@@ -23,3 +23,8 @@ SELECT columns(nome da column) FROM table_name === usado pra ver a(s) coluna(s) 
 
 DELETE FROM table_name WHERE condition;
 
+DROP TABLE table_name === deleta a tabela da db;
+
+ALTER DATABASE database_name RENAME TO new_database_name === altera o nome da db;
+
+DROP DATABASE database_name === deleta a db;
