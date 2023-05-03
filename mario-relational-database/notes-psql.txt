@@ -5,3 +5,21 @@ psql --username=freecodecamp -dbname=postgres === comando usado pra entrar no te
 CREATE DATABASE first_database === cria a db;
 
 \c === comando pra conectar/entrar na db pra adicionar informações;
+
+CREATE TABLE table_name() === cria a tabela dentro da database;
+
+\d === lista mostra as tables dentro da db;
+\d table_name === mostra os detalhes da table;
+
+ALTER TABLE table_name ADD COLUMN column_name DATATYPE === adiciona uma coluna na table e indica o tipo de dado usado (datatype);
+
+ALTER TABLE table_name DROP COLUMN column_name === usado pra remover a coluna especificada;
+
+ALTER TABLE table_name RENAME COLUMN column_name TO new_name === usado pra renomear uma coluna;
+
+INSERT INTO table_name(column1, column2) VALUES(value1, value2) === usado pra adicionar valores a colunas da table;
+
+SELECT columns(nome da column) FROM table_name === usado pra ver a(s) coluna(s) da table;
+
+DELETE FROM table_name WHERE condition;
+

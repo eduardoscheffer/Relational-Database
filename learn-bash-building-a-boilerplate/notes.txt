@@ -1,11 +1,19 @@
 Comando === Significado
 -----------------------------------
 echo hello terminal === printa 'hello terminal'
+
 pwd === printa o diretorio que o terminal se encontra. 'print working directory'
+
 more <filename> === usado pra ver o que tem dentro de certo arquivo/diretorio
+
 ls -l === lista o conteudo da past de forma listada em colunas
+
 touch <filename> === usado pra criar arquivos
+
 cp <file> <destination> === copia o arquivo pro destino informado
+
 mv <filename> <new_filename>/<pasta_destino> === mv stands for 'move' e pode renomear ou mover um arquivo
+
 find === mostra toda a arvore de arquivos
+
 find -name <filename> === mostra o local do file procurado
