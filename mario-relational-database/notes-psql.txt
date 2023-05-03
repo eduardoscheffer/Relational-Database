@@ -1,0 +1,7 @@
+psql --username=freecodecamp -dbname=postgres === comando usado pra entrar no terminal especifico psql;
+
+\l === lista quais bancos de dados existem;
+
+CREATE DATABASE first_database === cria a db;
+
+\c === comando pra conectar/entrar na db pra adicionar informações;
