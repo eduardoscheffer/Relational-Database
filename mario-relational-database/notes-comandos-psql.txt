@@ -1,4 +1,4 @@
-psql --username=freecodecamp -dbname=postgres === comando usado pra entrar no terminal especifico psql;
+psql --username=freecodecamp --dbname=postgres === comando usado pra entrar no terminal especifico psql;
 
 \l === lista quais bancos de dados existem;
 
@@ -19,7 +19,14 @@ ALTER TABLE table_name RENAME COLUMN column_name TO new_name === usado pra renom
 
 INSERT INTO table_name(column1, column2) VALUES(value1, value2) === usado pra adicionar valores a colunas da table;
 
-SELECT columns(nome da column) FROM table_name === usado pra ver a(s) coluna(s) da table;
+INSERTO INTO table_name(column1, column2, column3)
+VALUES('Mario', 'Mushroom Kingdom', 'Red'),
+VALUES('Luigi', 'Mushroom Kingdom', 'Green'),
+VALUES('Peach', 'Mushroom Kingdom', 'Pink') === usado pra adicionar varios rows de uma vez so nas colunas da table;
+
+SELECT columns(nome da column - '*' pra listar todas) FROM table_name === usado pra ver a(s) coluna(s) da table;
+
+SELECT columns FROM table_name ORDER BY column_name === usado pra ver a(s) coluna(s) em ordem especifica;
 
 DELETE FROM table_name WHERE condition;
 
@@ -28,3 +35,10 @@ DROP TABLE table_name === deleta a tabela da db;
 ALTER DATABASE database_name RENAME TO new_database_name === altera o nome da db;
 
 DROP DATABASE database_name === deleta a db;
+
+UPDATE table_name SET column_name=new_value WHERE conditio === atualiza um valor dentro da tabela;
+
+ALTER TABLE table_name ADD PRIMARY KEY(column_name) === elege uma coluna pra ser a primary key da table;
+
+ALTER TABLE table_name DROP CONSTRAINT constraint_name === usado pra deletar uma primary_key de uma tabela;
+
