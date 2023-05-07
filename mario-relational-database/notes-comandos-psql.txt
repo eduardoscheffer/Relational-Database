@@ -21,8 +21,8 @@ INSERT INTO table_name(column1, column2) VALUES(value1, value2) === usado pra ad
 
 INSERTO INTO table_name(column1, column2, column3)
 VALUES('Mario', 'Mushroom Kingdom', 'Red'),
-VALUES('Luigi', 'Mushroom Kingdom', 'Green'),
-VALUES('Peach', 'Mushroom Kingdom', 'Pink') === usado pra adicionar varios rows de uma vez so nas colunas da table;
+('Luigi', 'Mushroom Kingdom', 'Green'),
+('Peach', 'Mushroom Kingdom', 'Pink') === usado pra adicionar varios rows de uma vez so nas colunas da table;
 
 SELECT columns(nome da column - '*' pra listar todas) FROM table_name === usado pra ver a(s) coluna(s) da table;
 
@@ -41,4 +41,15 @@ UPDATE table_name SET column_name=new_value WHERE conditio === atualiza um valor
 ALTER TABLE table_name ADD PRIMARY KEY(column_name) === elege uma coluna pra ser a primary key da table;
 
 ALTER TABLE table_name DROP CONSTRAINT constraint_name === usado pra deletar uma primary_key de uma tabela;
+
+ALTER TABLE table_name ADD COLUMN column_name TYPE REFERENCES table_name(column_referenced) === adiciona uma coluna e cria como sendo uma foreign key (relaciona a tabela com outra por meio dessa coluna);
+
+ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES rerenced_table(referenced_column) === seta uma coluna (já criada) de uma table pra ser a foreign key;
+
+ALTER TABLE table_name ALTER COLUMN column_name SET NOT NULL === coloca a coluna para ser not null (não pode ser vazia);
+
+CREATE TABLE table_name(column_name TYPE PRIMARY KEY?) === usado pra criar uma tabela e ja adicionar a primeira coluna com um unico comando;
+
+SELECT columns FROM table_1 FULL JOIN table_2 ON table_1.primary_key_column = table_2.foreig_key_column === usado pra linkar tabelas e trazer informações de outras tabelas baseada na info de uma.Ex:
+SELECT birthday FROM more_info FULL JOIN characters ON more_info.character_id = characters.character_id WHERE name='Mario'
 
