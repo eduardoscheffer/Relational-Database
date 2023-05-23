@@ -1,0 +1,5 @@
+sh <nome-do-arquivo> === executa o arquivo utilizando o interpretador shell;
+
+bash <nome-do-arquivo> === executa o arquivo utilizando o interpretador bash;
+
+chmod +x <nome-do-arquivo> === da permissão a todos de execução do programa
