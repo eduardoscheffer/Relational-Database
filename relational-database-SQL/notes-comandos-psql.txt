@@ -53,3 +53,7 @@ CREATE TABLE table_name(column_name TYPE PRIMARY KEY?) === usado pra criar uma t
 SELECT columns FROM table_1 FULL JOIN table_2 ON table_1.primary_key_column = table_2.foreig_key_column === usado pra linkar tabelas e trazer informações de outras tabelas baseada na info de uma.Ex:
 SELECT birthday FROM more_info FULL JOIN characters ON more_info.character_id = characters.character_id WHERE name='Mario'
 
+TRUNCATE <table_name> === usado pra deletar TODOS os dados da table.
+
+
+
