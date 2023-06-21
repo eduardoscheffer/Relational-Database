@@ -14,6 +14,8 @@ read NAME => PEGA INPUT DO USUARIO E SALVA NA VARIAVEL NAME
 
 echo $* => PRINTA TODOS OS ARGUMENTOS DO SCRIPT
 
+cat <filename> => PRINTA O CONTEUDO DO ARQUIVO
+
 PRINTA true se o 1º argumento for passado no bash:
 if [[ $1 == arg1 ]]
 then
