@@ -55,5 +55,9 @@ SELECT birthday FROM more_info FULL JOIN characters ON more_info.character_id = 
 
 TRUNCATE <table_name> === usado pra deletar TODOS os dados da table.
 
+cat <filename> === printa no terminal o conteudo do arquivo
 
+pg_dump --clean --create --inserts --username=freecodecamp <database_name> <filename.sql> === usado prra criar um dump da database num arquivo .sql. Salva todos os comandos necessários pra fazer um rebuild da database;
+
+psql -U postgres < students.sql; === usado pra fazer a restauração da database students, salve anteriormente no arquivo students.sql
 
