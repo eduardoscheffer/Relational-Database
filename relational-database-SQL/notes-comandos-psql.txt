@@ -61,3 +61,20 @@ pg_dump --clean --create --inserts --username=freecodecamp <database_name> <file
 
 psql -U postgres < students.sql; === usado pra fazer a restauração da database students, salve anteriormente no arquivo students.sql
 
+WHERE <column> LIKE '<pattern>' === usado pra achar na coluna qualquer coisa que de match com o pattern informado. Ex: SELECT * FROM courses WHERE course LIKE '_lgorithms'; => vai selecionar as que derem o match com o pattens passado (o _ sigfnifica qualquer caracter). Outro ex: SELECT * FROM courses WHERE course ILIKE 'Web%'; => vai selecionar todos os cursos que comecem com 'Web' ou 'web', o I antes do LIKE torna o pattern não sensitivo.
+
+WHERE <column> IS NULL === usado pra acessar locais da coluna onde a info é nulla ou vazia;
+
+SELECT MIN(<column>) FROM <table> === usado pra encontrar o menor valor numérico da coluna, a opção MAX(<column>) faz o mesmo so que retorna o máximo;
+
+SELECT SUM(<column>) FROM <table> === usado pra retornar a soma da coluna de valores numéricos;
+
+SELECT AVG(<column>) FROM <table> === usado pra retornar a media da coluna de valores numérico;
+SELECT ROUND(AVG(<column>), 3) FROM <table> === usado pra retornar a media da coluna de valores numérico com o valor arredondado pro valor inteiro mais proximo, com 3 casas decimais;
+
+SELECT COUNT(*) FROM <table> === usado pra contar quantas entries tem na table;
+
+SELECT <column1>, MIN(<column>) FROM <table> GROUP BY <column1> === usado pra agrupar respostas por colunas, por ex: SELECT major_id, MIN(gpa) FROM students GROUP BY major_id => retorna o valor minimo da nota de cada major_id.
+
+SELECT * FROM <table_1> FULL JOIN <table_2> ON <table_1>.<foreign_key_column> = <table_2>.<foreign_key_column>; === usado pra fazer o JOIN entre duas tabelas que tem uma coluna em comum (foreign key);
+
