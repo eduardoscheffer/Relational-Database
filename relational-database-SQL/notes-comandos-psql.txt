@@ -7,6 +7,13 @@ CREATE DATABASE first_database === cria a db;
 \c === comando pra conectar/entrar na db pra adicionar informações;
 
 CREATE TABLE table_name() === cria a tabela dentro da database;
+CREATE TABLE Persons (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255)
+);
 
 \d === lista mostra as tables dentro da db;
 \d table_name === mostra os detalhes da table;
